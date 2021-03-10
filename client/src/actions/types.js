@@ -1,0 +1,63 @@
+// Opportunity Types
+export const FETCH_OPPORTUNITIES = "FETCH_OPPORTUNITIES";
+export const CREATE_OPPORTUNITY = "CREATE_OPPORTUNITY";
+export const EDIT_OPPORTUNITY = "EDIT_OPPORTUNITY";
+export const DELETE_OPPORTUNITY = "DELETE_OPPORTUNITY";
+export const FETCH_OPPORTUNITY = "FETCH_OPPORTUNITY";
+export const IN_PROGRESS_OPPORTUNITY = "IN_PROGRESS_OPPORTUNITY";
+export const ERROR_OPPORTUNITY = "ERROR_OPPORTUNITY";
+
+// Script Types
+export const FETCH_SCRIPTS = "FETCH_SCRIPTS";
+export const CREATE_SCRIPT = "CREATE_SCRIPT";
+export const EDIT_SCRIPT = "EDIT_SCRIPT";
+export const DELETE_SCRIPT = "DELETE_SCRIPT";
+export const FETCH_SCRIPT = "FETCH_SCRIPT";
+export const IN_PROGRESS_SCRIPT = "IN_PROGRESS_SCRIPT";
+export const ERROR_SCRIPT = "ERROR_SCRIPT";
+
+// Activity Types
+export const FETCH_ACTIVITIES = "FETCH_ACTIVITIES";
+export const CREATE_ACTIVITY = "CREATE_ACTIVITY";
+export const EDIT_ACTIVITY = "EDIT_ACTIVITY";
+export const DELETE_ACTIVITY = "DELETE_ACTIVITY";
+export const FETCH_ACTIVITY = "FETCH_ACTIVITY";
+export const IN_PROGRESS_ACTIVITY = "IN_PROGRESS_ACTIVITY";
+export const ERROR_ACTIVITY = "ERROR_ACTIVITY";
+
+// Contact Types
+export const FETCH_CONTACTS = "FETCH_CONTACTS";
+export const CREATE_CONTACT = "CREATE_CONTACT";
+export const EDIT_CONTACT = "EDIT_CONTACT";
+export const DELETE_CONTACT = "DELETE_CONTACT";
+export const FETCH_CONTACT = "FETCH_CONTACT";
+export const IN_PROGRESS_CONTACT = "IN_PROGRESS_CONTACT";
+export const ERROR_CONTACT = "ERROR_CONTACT";
+
+// Meeting Types
+export const FETCH_MEETINGS = "FETCH_MEETINGS";
+export const CREATE_MEETING = "CREATE_MEETING";
+export const EDIT_MEETING = "EDIT_MEETING";
+export const DELETE_MEETING = "DELETE_MEETING";
+export const FETCH_MEETING = "FETCH_MEETING";
+export const IN_PROGRESS_MEETING = "IN_PROGRESS_MEETING";
+export const ERROR_MEETING = "ERROR_MEETING";
+
+// Note Types
+export const FETCH_NOTES = "FETCH_NOTES";
+export const CREATE_NOTE = "CREATE_NOTE";
+export const EDIT_NOTE = "EDIT_NOTE";
+export const DELETE_NOTE = "DELETE_NOTE";
+export const FETCH_NOTE = "FETCH_NOTE";
+export const IN_PROGRESS_NOTE = "IN_PROGRESS_NOTE";
+export const ERROR_NOTE = "ERROR_NOTE";
+
+// Auth Types
+export const SIGN_IN = "SIGN_IN";
+export const GET_ME = "GET_ME";
+export const SIGN_OUT = "SIGN_OUT";
+export const AUTH_IN_PROGRESS = "AUTH_IN_PROGRESS";
+export const AUTH_ERROR = "AUTH_ERROR";
+
+// Error Types
+export const ERROR = "ERROR";
