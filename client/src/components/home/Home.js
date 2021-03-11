@@ -10,6 +10,7 @@ import ActivityFeed from "../activities/ActivityFeed";
 import OpportunityList from "../opportunities/OpportunityList";
 import UserStats from "./UserStats";
 import requireAuth from "../requireAuth";
+import OpportunityChart from "./OpportunityChart";
 
 class Home extends React.Component {
   componentDidMount() {
@@ -19,6 +20,26 @@ class Home extends React.Component {
     }
   }
 
+  getOppChartData() {
+    const data = {
+      research: 0,
+      "info meeting": 0,
+      "screening interview": 0,
+      "technical interview": 0,
+      negotiation: 0,
+      won: 0,
+      lost: 0,
+    };
+    for (let opp of this.props.opportunities) {
+      data[opp.stage] += 1;
+    }
+    const formattedData = [];
+    for (let item in data) {
+      formattedData.push({ x: item, y: data[item] });
+    }
+    return formattedData;
+  }
+
   render() {
     return (
       <div>
@@ -26,6 +47,7 @@ class Home extends React.Component {
         <div className="ui stackable grid">
           <div className="ten wide column">
             <div>
+              <OpportunityChart data={this.getOppChartData()} />
               <OpportunityList />
             </div>
           </div>
@@ -43,6 +65,7 @@ Home = requireAuth(Home);
 const mapStateToProps = (state) => {
   return {
     auth: state.auth,
+    opportunities: Object.values(state.opportunities.data),
   };
 };
 
